@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <title>Hackerati Full Stack Project</title>
+
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="A real time velocity time graph">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'/> 
+
+    <script type="text/javascript" src="/bower_components/Chart.js/Chart.min.js"></script>   
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
+
+</head>
+<body>
+ <container id="container">
+ <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h3><p>Velocity/time graph</p></h3>
+      <p id="users"></p>  
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">  
+      <canvas width="850" height="400" id="myChart"></canvas>
+    </div>
+</div>
+ <div id="table-data" class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <table id="report" class="table table-bordered">
+          <tr>
+            <th class="col-md-3"><h2>Velocity<span>(m/s)</span></h2></th>
+            <th class="col-md-3"><h2>Time<span>(s)</span></h2></th>
+            <th class="col-md-3"><h2>Acceleration<span>(m/s^2)</span></h2></th>
+          </tr>
+    </table>
+  </div>
+</div>
+
+</container>
+ <script src="/socket.io/socket.io.js"></script>
+ <script type="text/javascript" src="/javascripts/Graph.js"></script>
+</body>
+</html>

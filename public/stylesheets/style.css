@@ -1,0 +1,43 @@
+body {
+      margin: 0px; padding: 0px;
+      background-size: 25% 25%;
+      background-size: cover
+    }
+
+th {text-align: center; color: black; background: silver}
+
+h3{text-decoration: underline; text-align: center}
+
+p{ color:black; z-index: 999; text-align: center; font-family: 'Helvetica Neue'}
+
+table {text-align: center}
+
+tr {border-color: 2px solid black}
+
+strong{color: red}
+
+span{font-size: 15px}
+
+
+#report {background-color: rgba(255, 255, 255, 0.9);
+         background: rgba(255, 255, 255, 0.9);
+         text-align: center; z-index: 1
+        }
+
+#report th{text-align: center}
+
+#report h2{color:black; z-index: 999;font-family: 'Helvetica Neue' }
+
+#report td{color:black; z-index: 999;font-family: 'Helvetica Neue'; font-size: 1.2em}
+   
+.heading{width: 790px}
+
+.heading td {width: 300px}
+   
+#users{color:green}
+
+#users em{color:green}
+
+#users i{color:blue}
+
+#table-data{position: relative}
