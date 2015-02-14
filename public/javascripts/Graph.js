@@ -11,7 +11,7 @@
 
   socket.on('time', function(time){
     seconds = time;
-    acceleration = velocity/time;
+    acceleration = Math.round(velocity/time);
   });
 
 //Delete old data from table
